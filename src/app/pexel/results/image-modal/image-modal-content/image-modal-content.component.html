@@ -1,0 +1,16 @@
+<div class="container">
+  <img [src]="selectedPhoto?.src?.large" [alt]="selectedPhoto?.url" />
+  <div class="overlay">
+    <a class="icon" (click)="download(selectedPhoto)">
+      <i class="fa fa-download"></i>
+    </a>
+  </div>
+</div>
+<article>
+  <a [href]="selectedPhoto?.url">Photo #{{ selectedPhoto.id }}</a
+  >, taken by
+  <a [href]="selectedPhoto?.photographer_url">{{
+    selectedPhoto?.photographer
+  }}</a>
+  on Pexels.
+</article>

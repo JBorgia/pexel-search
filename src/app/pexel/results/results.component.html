@@ -1,0 +1,5 @@
+<div class="wrapper">
+  <app-image-item *ngFor="let photo of results | colorFilter: colorString" [photo]="photo" (click)="imageModal.open(photo)"></app-image-item>
+</div>
+
+<app-image-modal #imageModal></app-image-modal>

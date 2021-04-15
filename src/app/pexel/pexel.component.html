@@ -1,0 +1,10 @@
+<app-search
+    #search
+    (color)="colorString = $event">
+</app-search>
+<div class="scroll-wrapper" #wrapperDiv>
+    <app-results
+        [results]="results$ | async"
+        [colorString]="colorString">
+    </app-results>
+</div>
